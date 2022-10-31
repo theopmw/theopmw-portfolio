@@ -9,6 +9,9 @@
   justify-content: center;
   transform: translateY(-50%);
 }
+.controls .active-btn {
+  background-color: var(--color-secondary) !important;
+}
 .controls .control {
   padding: 1rem;
   cursor: pointer;

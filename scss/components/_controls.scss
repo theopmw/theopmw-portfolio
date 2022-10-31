@@ -10,7 +10,9 @@
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-
+  .active-btn {
+    background-color: var(--color-secondary) !important;
+  }
   .control {
     padding: 1rem;
     cursor: pointer;
