@@ -30,6 +30,95 @@
   pointer-events: none;
 }
 
+.hero-wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.hero-wrapper,
+.hero-wrapper * {
+  cursor: none;
+}
+.hero-wrapper .cursor {
+  position: fixed;
+  background: #2128bd;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: -5px 0 0 -5px;
+  will-change: transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 99;
+}
+.hero-wrapper .shapes {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #2128bd;
+  overflow: hidden;
+}
+.hero-wrapper .shapes .shape {
+  will-change: transform;
+  position: absolute;
+  border-radius: 50%;
+}
+.hero-wrapper .shapes .shape.shape-1 {
+  background: #005ffe;
+  width: 650px;
+  height: 650px;
+  margin: calc(-650px/ 2) 0 0 calc(-650px / 2);
+}
+.hero-wrapper .shapes .shape.shape-2 {
+  background: #e28446;
+  width: 440px;
+  height: 440px;
+  margin: calc(-440px/ 2) 0 0 calc(-440px / 2);
+}
+.hero-wrapper .shapes .shape.shape-3 {
+  background: #1c7cac;
+  width: 270px;
+  height: 270px;
+  margin: calc(-270px/ 2) 0 0 calc(-270px / 2);
+}
+.hero-wrapper .hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  mix-blend-mode: screen;
+}
+.hero-wrapper .hero-content .home-text {
+  margin: 0 0 0 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); /* IE */
+  -moz-transform: translateY(-50%); /* Firefox */
+  -webkit-transform: translateY(-50%); /* Safari and Chrome */
+  -o-transform: translateY(-50%);
+}
+.hero-wrapper .hero-content .landing-heading {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #000;
+}
+.hero-wrapper .hero-content .landing-subheading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000;
+}
+
 :root {
   --color-primary: #31657d;
   --color-secondary: #7c8d95;

@@ -5,3 +5,15 @@
 @mixin box-shadow-1 {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
+
+// Code for v-align mixin from:
+// https://stackoverflow.com/questions/17996425/how-to-vertically-center-content-of-child-divs-inside-parent-div-in-a-fluid-layo
+@mixin v-align($position: absolute) {
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); /* IE */
+  -moz-transform: translateY(-50%); /* Firefox */
+  -webkit-transform: translateY(-50%); /* Safari and Chrome */
+  -o-transform: translateY(-50%);
+}
