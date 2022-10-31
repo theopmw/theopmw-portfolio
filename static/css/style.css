@@ -114,4 +114,8 @@ section {
   display: none;
   transform: translateY(0) scale(1);
   background-color: rgb(107, 205, 90);
+}
+
+.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
