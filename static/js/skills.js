@@ -12,8 +12,8 @@ const frameworks = [
 
 // set variables
 let imgType = '.svg';
-let imgs_languages = '/assets/img/languages/';
-let imgs_frameworks = '/assets/img/frameworks/';
+let imgs_languages = './assets/img/languages/';
+let imgs_frameworks = './assets/img/frameworks/';
 let ul_languages = "<div class='languages-container'><ul>";
 let ul_frameworks = "<div class='frameworks-container'><ul>";
 
