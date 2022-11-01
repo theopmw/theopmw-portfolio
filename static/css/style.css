@@ -147,8 +147,45 @@
 }
 #languages .languages-container li {
   text-align: center;
-  padding: 1.25rem;
   font-family: "Montseratt", sans-serif;
+}
+@media (min-width: 0) {
+  #languages .languages-container li {
+    margin: 0.5rem;
+    height: 4.375rem;
+    width: 4.375rem;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 0) and (min-width: 720px) {
+  #languages .languages-container li {
+    margin: 0.75rem;
+    height: 7.5rem;
+    width: 7.5rem;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 0) and (min-width: 960px) {
+  #languages .languages-container li {
+    margin: 1.5rem;
+    height: 9.375rem;
+    width: 9.375rem;
+  }
+}
+@media (min-width: 0) {
+  #languages .languages-container li img {
+    height: 3.125rem;
+  }
+}
+@media (min-width: 720px) {
+  #languages .languages-container li img {
+    height: 4.6875rem;
+  }
+}
+@media (min-width: 960px) {
+  #languages .languages-container li img {
+    height: 7.5rem;
+  }
 }
 
 :root {
@@ -198,7 +235,16 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem;
+}
+@media (min-width: 0) {
+  section {
+    padding: 3rem 1rem;
+  }
+}
+@media (min-width: 720px) {
+  section {
+    padding: 3rem;
+  }
 }
 
 .section {

@@ -3,6 +3,7 @@
 @use 'sections/home' as *;
 @use 'components/typography' as *;
 @use 'sections/skills' as *;
+@use 'components/breakpoints' as *;
 
 :root {
   --color-primary: #31657d;
@@ -51,7 +52,14 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem;
+
+  @include xs {
+    padding: 3rem 1rem;
+  }
+
+  @include md {
+    padding: 3rem;
+  }
 }
 
 .section {
