@@ -129,6 +129,28 @@
   font-size: 4rem;
 }
 
+#languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#languages .languages-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#languages .languages-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* just to make it look cleaner */
+  list-style-type: none;
+  justify-content: center;
+}
+#languages .languages-container li {
+  text-align: center;
+  padding: 1.25rem;
+  font-family: "Montseratt", sans-serif;
+}
+
 :root {
   --color-primary: #31657d;
   --color-secondary: #7c8d95;
@@ -176,7 +198,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem;
 }
 
 .section {
