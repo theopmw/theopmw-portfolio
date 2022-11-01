@@ -118,15 +118,15 @@
 
     img[src='/assets/img/frameworks/materialize.svg'] {
       @include xs {
-        width: 65px;
+        width: 4.0625rem;
       }
 
       @include md {
-        width: 100px;
+        width: 6.25rem;
       }
 
       @include lg {
-        width: 140px;
+        width: 8.75rem;
       }
     }
   }
