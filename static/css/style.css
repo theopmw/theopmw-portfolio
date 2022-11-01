@@ -141,7 +141,7 @@
 }
 
 body {
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
@@ -178,31 +178,31 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
+  background-color: var(--color-primary);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(50, 39, 124);
+  background-color: var(--color-primary);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(194, 90, 205);
+  background-color: var(--color-primary);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(205, 90, 113);
+  background-color: var(--color-primary);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(107, 205, 90);
+  background-color: var(--color-primary);
 }
 
 .active.section {
