@@ -200,6 +200,11 @@
     height: 7.5rem;
   }
 }
+@media (min-width: 720px) {
+  #languages .languages-container li h3 {
+    padding: 0.625rem 0;
+  }
+}
 
 #frameworks {
   display: flex;
@@ -244,6 +249,11 @@
     width: 9.375rem;
   }
 }
+@media (min-width: 720px) {
+  #frameworks .frameworks-container li h3 {
+    padding: 0.625rem 0;
+  }
+}
 @media (min-width: 0) {
   #frameworks .frameworks-container li img {
     height: 3.125rem;
@@ -272,6 +282,11 @@
 @media (min-width: 960px) {
   #frameworks .frameworks-container img[src="/assets/img/frameworks/materialize.svg"] {
     width: 8.75rem;
+  }
+}
+@media (min-width: 720px) {
+  #frameworks .frameworks-container h3 {
+    padding: 0.625rem 0;
   }
 }
 
@@ -303,7 +318,7 @@
     font-size: 0.75rem;
   }
 }
-@media (min-width: 0) and (min-width: 720px) {
+@media (min-width: 720px) {
   #version-control .version-control-container li {
     margin: 0.75rem;
     height: 7.5rem;
@@ -311,7 +326,7 @@
     font-size: 1.25rem;
   }
 }
-@media (min-width: 0) and (min-width: 960px) {
+@media (min-width: 960px) {
   #version-control .version-control-container li {
     margin: 1.5rem;
     height: 9.375rem;
@@ -331,6 +346,11 @@
 @media (min-width: 960px) {
   #version-control .version-control-container li img {
     height: 7.5rem;
+  }
+}
+@media (min-width: 720px) {
+  #version-control .version-control-container li h3 {
+    padding: 0.625rem 0;
   }
 }
 
@@ -390,6 +410,11 @@
 @media (min-width: 960px) {
   #design .design-container li img {
     height: 7.5rem;
+  }
+}
+@media (min-width: 720px) {
+  #design .design-container li h3 {
+    padding: 0.625rem 0;
   }
 }
 
