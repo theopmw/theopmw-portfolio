@@ -260,18 +260,77 @@
   }
 }
 @media (min-width: 0) {
-  #frameworks .frameworks-container img[src="./assets/img/frameworks/materialize.svg"] {
+  #frameworks .frameworks-container img[src="/assets/img/frameworks/materialize.svg"] {
     width: 4.0625rem;
   }
 }
 @media (min-width: 720px) {
-  #frameworks .frameworks-container img[src="./assets/img/frameworks/materialize.svg"] {
+  #frameworks .frameworks-container img[src="/assets/img/frameworks/materialize.svg"] {
     width: 6.25rem;
   }
 }
 @media (min-width: 960px) {
-  #frameworks .frameworks-container img[src="./assets/img/frameworks/materialize.svg"] {
+  #frameworks .frameworks-container img[src="/assets/img/frameworks/materialize.svg"] {
     width: 8.75rem;
+  }
+}
+
+#version-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#version-control .version-control-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#version-control .version-control-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* just to make it look cleaner */
+  list-style-type: none;
+  justify-content: center;
+}
+#version-control .version-control-container li {
+  text-align: center;
+  font-family: "Montseratt", sans-serif;
+}
+@media (min-width: 0) {
+  #version-control .version-control-container li {
+    margin: 0.5rem;
+    height: 4.375rem;
+    width: 4.375rem;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 0) and (min-width: 720px) {
+  #version-control .version-control-container li {
+    margin: 0.75rem;
+    height: 7.5rem;
+    width: 7.5rem;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 0) and (min-width: 960px) {
+  #version-control .version-control-container li {
+    margin: 1.5rem;
+    height: 9.375rem;
+    width: 9.375rem;
+  }
+}
+@media (min-width: 0) {
+  #version-control .version-control-container li img {
+    height: 3.125rem;
+  }
+}
+@media (min-width: 720px) {
+  #version-control .version-control-container li img {
+    height: 4.6875rem;
+  }
+}
+@media (min-width: 960px) {
+  #version-control .version-control-container li img {
+    height: 7.5rem;
   }
 }
 

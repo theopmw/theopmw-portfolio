@@ -10,16 +10,22 @@ const frameworks = [
   'Django',
 ];
 
+const versionControl = ['Git', 'GitHub'];
+
 // set variables
 let imgType = '.svg';
-let imgs_languages = './assets/img/languages/';
-let imgs_frameworks = './assets/img/frameworks/';
+let imgs_languages = '/assets/img/languages/';
+let imgs_frameworks = '/assets/img/frameworks/';
+let imgs_version_control = '/assets/img/version-control/';
 let ul_languages = "<div class='languages-container'><ul>";
 let ul_frameworks = "<div class='frameworks-container'><ul>";
+let ul_version_control = "<div class='version-control-container'><ul>";
 
 let languagesList = ul_languages;
 
 let frameworksList = ul_frameworks;
+
+let versionControlList = ul_version_control;
 
 languages.map((language) => {
   languagesList += `<li class="skills-item"><img src="${imgs_languages}${language.toLowerCase()}${imgType}" alt="${language}" lazyload="on"><h3>${language}</h3></li>`;
@@ -31,10 +37,19 @@ frameworks.map((framework) => {
 });
 ul_frameworks += '</ul></div>';
 
-// append all rows to #languages
+versionControl.map((version) => {
+  versionControlList += `<li class="skills-item"><img src="${imgs_version_control}${version.toLowerCase()}${imgType}" alt="${version}" lazyload="on"><h3>${version}</h3></li>`;
+});
+ul_version_control += '</ul></div>';
+
+// append all languages to #languages
 let languagesDiv = document.getElementById('languages');
 languagesDiv.innerHTML += languagesList;
 
-// append all rows to #frameworks
+// append all frameworks to #frameworks
 let frameworksDiv = document.getElementById('frameworks');
 frameworksDiv.innerHTML += frameworksList;
+
+// append all version control to #version-control
+let versionControlDiv = document.getElementById('version-control');
+versionControlDiv.innerHTML += versionControlList;
