@@ -12,20 +12,26 @@ const frameworks = [
 
 const versionControl = ['Git', 'GitHub'];
 
+const design = ['Balsamiq', 'Figma'];
+
 // set variables
 let imgType = '.svg';
 let imgs_languages = '/assets/img/languages/';
 let imgs_frameworks = '/assets/img/frameworks/';
 let imgs_version_control = '/assets/img/version-control/';
+let imgs_design = '/assets/img/design/';
 let ul_languages = "<div class='languages-container'><ul>";
 let ul_frameworks = "<div class='frameworks-container'><ul>";
 let ul_version_control = "<div class='version-control-container'><ul>";
+let ul_design = "<div class='design-container'><ul>";
 
 let languagesList = ul_languages;
 
 let frameworksList = ul_frameworks;
 
 let versionControlList = ul_version_control;
+
+let designList = ul_design;
 
 languages.map((language) => {
   languagesList += `<li class="skills-item"><img src="${imgs_languages}${language.toLowerCase()}${imgType}" alt="${language}" lazyload="on"><h3>${language}</h3></li>`;
@@ -42,6 +48,11 @@ versionControl.map((version) => {
 });
 ul_version_control += '</ul></div>';
 
+design.map((design) => {
+  designList += `<li class="skills-item"><img src="${imgs_design}${design.toLowerCase()}${imgType}" alt="${design}" lazyload="on"><h3>${design}</h3></li>`;
+});
+ul_design += '</ul></div>';
+
 // append all languages to #languages
 let languagesDiv = document.getElementById('languages');
 languagesDiv.innerHTML += languagesList;
@@ -53,3 +64,7 @@ frameworksDiv.innerHTML += frameworksList;
 // append all version control to #version-control
 let versionControlDiv = document.getElementById('version-control');
 versionControlDiv.innerHTML += versionControlList;
+
+// append all version control to #version-control
+let designDiv = document.getElementById('design');
+designDiv.innerHTML += designList;
