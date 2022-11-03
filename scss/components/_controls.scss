@@ -1,18 +1,39 @@
 @use './mixins' as *;
+@use '../components/breakpoints' as *;
 
 .controls {
   position: fixed;
   z-index: 10;
-  top: 50%;
-  right: 3%;
+  // top: 50%;
+  // right: 3%;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translateY(-50%);
+  // transform: translateY(-50%);
   .active-btn {
     background-color: var(--color-secondary) !important;
   }
+
+  @include xs {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-2);
+  }
+
+  @include md {
+    top: 50%;
+    left: 45%;
+    // right: 3%;
+    flex-direction: column;
+    transform: translateY(-50%);
+    background-color: transparent;
+  }
+
   .control {
     padding: 1rem;
     cursor: pointer;
@@ -25,6 +46,10 @@
     align-items: center;
     margin: 0.7rem 0;
     @include box-shadow-1;
+
+    @include xs {
+      margin: 1rem 0.3rem;
+    }
 
     i {
       font-size: 1.2rem;

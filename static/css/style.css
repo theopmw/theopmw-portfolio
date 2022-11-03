@@ -1,16 +1,32 @@
 .controls {
   position: fixed;
   z-index: 10;
-  top: 50%;
-  right: 3%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translateY(-50%);
 }
 .controls .active-btn {
   background-color: var(--color-secondary) !important;
+}
+@media (min-width: 0) {
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-2);
+  }
+}
+@media (min-width: 720px) {
+  .controls {
+    top: 50%;
+    left: 45%;
+    flex-direction: column;
+    transform: translateY(-50%);
+    background-color: transparent;
+  }
 }
 .controls .control {
   padding: 1rem;
@@ -24,6 +40,11 @@
   align-items: center;
   margin: 0.7rem 0;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 0) {
+  .controls .control {
+    margin: 1rem 0.3rem;
+  }
 }
 .controls .control i {
   font-size: 1.2rem;
@@ -426,6 +447,17 @@
 @media (min-width: 720px) {
   #design .design-container li h3 {
     padding: 0.625rem 0;
+  }
+}
+
+@media (min-width: 0) {
+  .section-end {
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 720px) {
+  .section-end {
+    margin: 0rem 0;
   }
 }
 
