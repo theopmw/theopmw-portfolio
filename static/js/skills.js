@@ -16,7 +16,7 @@ const design = ['Balsamiq', 'Figma'];
 
 // set variables
 let imgType = '.png';
-let imgs_languages = './assets/img/languages/';
+let imgs_languages = '/assets/img/languages/';
 let imgs_frameworks = '/assets/img/frameworks/';
 let imgs_version_control = '/assets/img/version-control/';
 let imgs_design = '/assets/img/design/';
@@ -34,7 +34,7 @@ let versionControlList = ul_version_control;
 let designList = ul_design;
 
 languages.map((language) => {
-  languagesList += `<li class="skills-item"><img src="${imgs_languages}${language.toLowerCase()}${imgType}" alt="${language}"><h3>${language}</h3></li>`;
+  languagesList += `<li class="skills-item"><img src="${imgs_languages}${language}${imgType}" alt="${language}"><h3>${language}</h3></li>`;
 });
 ul_languages += '</ul></div>';
 
