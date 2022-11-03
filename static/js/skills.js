@@ -16,7 +16,7 @@ const design = ['Balsamiq', 'Figma'];
 
 // set variables
 let imgType = '.png';
-let imgs_languages = '/assets/img/languages/';
+let imgs_languages = './assets/img/languages/';
 let imgs_frameworks = '/assets/img/frameworks/';
 let imgs_version_control = '/assets/img/version-control/';
 let imgs_design = '/assets/img/design/';
