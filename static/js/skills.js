@@ -34,7 +34,7 @@ let versionControlList = ul_version_control;
 let designList = ul_design;
 
 languages.map((language) => {
-  languagesList += `<li class="skills-item"><img src="${imgs_languages}${language.toLowerCase()}${imgType}" alt="${language}"<h3>${language}></h3></li>`;
+  languagesList += `<li class="skills-item"><img src="${imgs_languages}${language.toLowerCase()}${imgType}" alt="${language}"><h3>${language}></h3></li>`;
 });
 ul_languages += '</ul></div>';
 
