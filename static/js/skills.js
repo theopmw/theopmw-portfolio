@@ -15,7 +15,7 @@ const versionControl = ['Git', 'GitHub'];
 const design = ['Balsamiq', 'Figma'];
 
 // set variables
-let imgType = '.svg';
+let imgType = '.png';
 let imgs_languages = '/assets/img/languages/';
 let imgs_frameworks = '/assets/img/frameworks/';
 let imgs_version_control = '/assets/img/version-control/';
