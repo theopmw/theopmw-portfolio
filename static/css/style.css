@@ -281,17 +281,17 @@
   }
 }
 @media (min-width: 0) {
-  #frameworks .frameworks-container img[src="/assets/img/frameworks/materialize.svg"] {
+  #frameworks .frameworks-container img[src="./assets/img/frameworks/Materialize.svg"] {
     width: 4.0625rem;
   }
 }
 @media (min-width: 720px) {
-  #frameworks .frameworks-container img[src="/assets/img/frameworks/materialize.svg"] {
+  #frameworks .frameworks-container img[src="./assets/img/frameworks/Materialize.svg"] {
     width: 6.25rem;
   }
 }
 @media (min-width: 960px) {
-  #frameworks .frameworks-container img[src="/assets/img/frameworks/materialize.svg"] {
+  #frameworks .frameworks-container img[src="./assets/img/frameworks/Materialize.svg"] {
     width: 8.75rem;
   }
 }
