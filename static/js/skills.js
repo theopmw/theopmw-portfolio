@@ -39,17 +39,17 @@ languages.map((language) => {
 ul_languages += '</ul></div>';
 
 frameworks.map((framework) => {
-  frameworksList += `<li class="skills-item"><img src="${imgs_frameworks}${framework.toLowerCase()}${imgType}" alt="${framework}" lazyload="on"><h3>${framework}</h3></li>`;
+  frameworksList += `<li class="skills-item"><img src="${imgs_frameworks}${framework.toLowerCase()}${imgType}" alt="${framework}"><h3>${framework}</h3></li>`;
 });
 ul_frameworks += '</ul></div>';
 
 versionControl.map((version) => {
-  versionControlList += `<li class="skills-item"><img src="${imgs_version_control}${version.toLowerCase()}${imgType}" alt="${version}" lazyload="on"><h3>${version}</h3></li>`;
+  versionControlList += `<li class="skills-item"><img src="${imgs_version_control}${version.toLowerCase()}${imgType}" alt="${version}"><h3>${version}</h3></li>`;
 });
 ul_version_control += '</ul></div>';
 
 design.map((design) => {
-  designList += `<li class="skills-item"><img src="${imgs_design}${design.toLowerCase()}${imgType}" alt="${design}" lazyload="on"><h3>${design}</h3></li>`;
+  designList += `<li class="skills-item"><img src="${imgs_design}${design.toLowerCase()}${imgType}" alt="${design}"><h3>${design}</h3></li>`;
 });
 ul_design += '</ul></div>';
 
