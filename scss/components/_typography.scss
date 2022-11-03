@@ -1,3 +1,5 @@
+@use '../components/breakpoints' as *;
+
 .section-heading {
   text-align: center;
 
@@ -13,6 +15,15 @@
 .sub-heading {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 1.25rem;
   text-transform: uppercase;
+
+  @include xs {
+    font-size: 1.5rem;
+    padding: 2rem 1.25rem 1.25rem 1.25rem;
+  }
+
+  @include md {
+    font-size: 2rem;
+    padding: 3rem 1.25rem 1.25rem 1.25rem;
+  }
 }
