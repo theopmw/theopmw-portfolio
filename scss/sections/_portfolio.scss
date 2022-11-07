@@ -19,7 +19,7 @@
   @include lg {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
-    justify-content: center;
+    // justify-content: center;
   }
 
   .portfolio-item-card {
@@ -58,14 +58,14 @@
       transform: scale(0);
       @include transition;
 
-      h3 {
-        font-family: 'Montseratt', sans-serif;
-        color: var(--color-white);
-        font-size: 1rem;
-        padding: 0.5rem 0;
-        // margin-bottom: 1.5rem;
-        text-align: center;
-      }
+      // h3 {
+      //   font-family: 'Montseratt', sans-serif;
+      //   color: var(--color-white);
+      //   font-size: 1rem;
+      //   padding: 0.5rem 0;
+      //   margin-bottom: 1.5rem;
+      //   text-align: center;
+      // }
 
       .project-icons {
         display: flex;
