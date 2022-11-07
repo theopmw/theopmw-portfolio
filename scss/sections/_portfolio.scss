@@ -19,9 +19,10 @@
   @include lg {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
+    justify-content: center;
   }
 
-  .portfolio-item {
+  .portfolio-item-card {
     position: relative;
 
     img {
@@ -95,12 +96,32 @@
             }
           }
         }
+
+        .project-icon-text {
+          font-family: 'Montseratt', sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          padding: 0.5rem 0;
+        }
       }
     }
   }
+
+  .project-title {
+    font-family: 'Montseratt', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 0 0.2rem 0;
+  }
+
+  .project-languages {
+    font-family: 'Montseratt', sans-serif;
+    text-align: center;
+    font-size: 0.75rem;
+  }
 }
 
-.portfolio-item:hover .hover-item {
+.portfolio-item-card:hover .hover-item {
   opacity: 1;
   transform: scale(1);
 }
