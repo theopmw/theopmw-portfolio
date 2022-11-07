@@ -111,3 +111,13 @@ section {
     }
   }
 }
+
+.section-end {
+  @include xs {
+    margin: 3rem 0;
+  }
+
+  @include md {
+    margin: 0rem 0;
+  }
+}
