@@ -558,6 +558,31 @@
   transform: scale(1);
 }
 
+@media (min-width: 0) {
+  .freelance-projects {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .freelance-projects {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .freelance-projects {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+  .freelance-projects .freelance-portfolio-item-1 {
+    grid-column-start: 2;
+  }
+  .freelance-projects .freelance-portfolio-item-2 {
+    grid-column-start: 3;
+  }
+}
+
 :root {
   --color-primary: #31657d;
   --color-secondary: #7c8d95;
