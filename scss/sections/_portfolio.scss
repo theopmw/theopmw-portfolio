@@ -107,19 +107,156 @@
     }
   }
 
-  .project-title {
-    font-family: 'Montseratt', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0.5rem 0 0.2rem 0;
-  }
+  .accordion {
+    // width: 100%;
 
-  .project-languages {
-    font-family: 'Montseratt', sans-serif;
-    text-align: center;
-    font-size: 0.75rem;
+    .project-info {
+      // background-color: #000;
+      // .project-info {
+      //   display: block;
+      //   width: 100%;
+      // width: 100%;
+      // max-width: 500px;
+      overflow: hidden;
+      right: 0;
+    }
+
+    .project-title {
+      position: relative;
+      font-size: 15px;
+      font-family: 'Montseratt', sans-serif;
+      text-transform: uppercase;
+      // text-align: center;
+      padding: 0.5rem 0 0.2rem 0;
+      cursor: pointer;
+      transition: all 0.4s linear;
+      display: flex;
+      // flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+
+      img {
+        height: 20px;
+        width: 20px;
+        transform: translateY(-50%) rotate(0deg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 0.4s linear;
+        vertical-align: middle;
+        margin: 8px 0 0 10px;
+      }
+
+      // Replaced by img above
+      // &:after {
+      //   content: '';
+      //   background-image: url('/assets/img/icons/down-arrow.svg');
+      //   position: absolute;
+      //   top: 55%;
+      //   right: 3%;
+      //   transform: translateY(-50%) rotate(0deg);
+
+      //   height: 20px;
+      //   width: 20px;
+
+      //   background-size: contain;
+      //   background-repeat: no-repeat;
+      //   transition: all 0.4s linear;
+      // }
+    }
+
+    .project-details {
+      opacity: 0;
+      max-height: 0px;
+      transition: all 0.4s ease-out;
+      font-family: 'Montseratt', sans-serif;
+      text-align: center;
+
+      .project-description {
+        padding: 0 0 0.5rem 0;
+      }
+
+      .technologies-used {
+        h5 {
+          padding: 0 0 0.5rem 0;
+        }
+      }
+
+      .project-languages {
+        // text-align: center;
+        font-size: 0.75rem;
+      }
+    }
+
+    &.open {
+      .project-title {
+        margin-bottom: 15px;
+        // Replaced by img below
+
+        // &:after {
+        //   transform-origin: 50% 50%;
+        //   transform: translateY(-50%) rotate(180deg);
+        // }
+
+        img {
+          transform-origin: 50% 50%;
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+
+      .project-details {
+        opacity: 1;
+        max-height: 1000px;
+      }
+    }
   }
 }
+
+// ACCORDION 2
+// .accordion-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+
+//   .accordion {
+//     width: 100%;
+//     max-width: 500px;
+//     overflow: hidden;
+
+//     &__intro {
+//       position: relative;
+//       cursor: pointer;
+//     }
+
+//     &__content {
+//       // padding: 0 20px;
+//       max-height: 0;
+//       overflow: hidden;
+//       will-change: max-height;
+//       transition: all 0.25s ease-out;
+//       // color: #f1f1f1;
+//       opacity: 0;
+//     }
+
+//     &__active {
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// .project-title {
+//   font-family: 'Montseratt', sans-serif;
+//   text-transform: uppercase;
+//   text-align: center;
+//   padding: 0.5rem 0 0.2rem 0;
+// }
+
+// .project-languages {
+//   font-family: 'Montseratt', sans-serif;
+//   text-align: center;
+//   font-size: 0.75rem;
+// }
+// }
 
 .portfolio-item-card:hover .hover-item {
   opacity: 1;

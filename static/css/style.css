@@ -541,16 +541,58 @@
   text-align: center;
   padding: 0.5rem 0;
 }
-.projects .project-title {
+.projects .accordion .project-info {
+  overflow: hidden;
+  right: 0;
+}
+.projects .accordion .project-title {
+  position: relative;
+  font-size: 15px;
   font-family: "Montseratt", sans-serif;
   text-transform: uppercase;
-  text-align: center;
   padding: 0.5rem 0 0.2rem 0;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-.projects .project-languages {
+.projects .accordion .project-title img {
+  height: 20px;
+  width: 20px;
+  transform: translateY(-50%) rotate(0deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.4s linear;
+  vertical-align: middle;
+  margin: 8px 0 0 10px;
+}
+.projects .accordion .project-details {
+  opacity: 0;
+  max-height: 0px;
+  transition: all 0.4s ease-out;
   font-family: "Montseratt", sans-serif;
   text-align: center;
+}
+.projects .accordion .project-details .project-description {
+  padding: 0 0 0.5rem 0;
+}
+.projects .accordion .project-details .technologies-used h5 {
+  padding: 0 0 0.5rem 0;
+}
+.projects .accordion .project-details .project-languages {
   font-size: 0.75rem;
+}
+.projects .accordion.open .project-title {
+  margin-bottom: 15px;
+}
+.projects .accordion.open .project-title img {
+  transform-origin: 50% 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.projects .accordion.open .project-details {
+  opacity: 1;
+  max-height: 1000px;
 }
 
 .portfolio-item-card:hover .hover-item {
