@@ -583,9 +583,6 @@
 .projects .accordion .project-details .project-languages {
   font-size: 0.75rem;
 }
-.projects .accordion.open .project-title {
-  margin-bottom: 15px;
-}
 .projects .accordion.open .project-title img {
   transform-origin: 50% 50%;
   transform: translateY(-50%) rotate(180deg);

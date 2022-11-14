@@ -126,12 +126,10 @@
       font-size: 15px;
       font-family: 'Montseratt', sans-serif;
       text-transform: uppercase;
-      // text-align: center;
       padding: 0.5rem 0 0.2rem 0;
       cursor: pointer;
       transition: all 0.4s linear;
       display: flex;
-      // flex-wrap: wrap;
       justify-content: center;
       text-align: center;
 
@@ -189,13 +187,7 @@
 
     &.open {
       .project-title {
-        margin-bottom: 15px;
-        // Replaced by img below
-
-        // &:after {
-        //   transform-origin: 50% 50%;
-        //   transform: translateY(-50%) rotate(180deg);
-        // }
+        // margin-bottom: 15px;
 
         img {
           transform-origin: 50% 50%;
