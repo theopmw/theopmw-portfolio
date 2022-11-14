@@ -622,6 +622,15 @@
   }
 }
 
+.portfolio-github-link-text {
+  text-align: center;
+  padding: 2rem 0 0 0;
+  font-family: "Montseratt", sans-serif;
+}
+.portfolio-github-link-text a {
+  font-weight: 900;
+}
+
 :root {
   --color-primary: #31657d;
   --color-secondary: #7c8d95;
