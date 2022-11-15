@@ -118,6 +118,10 @@ section {
     margin: 3rem 0;
   }
 
+  @include lg {
+    margin: 0;
+  }
+
   // @include md {
   //   margin: 3rem 0;
   // }
