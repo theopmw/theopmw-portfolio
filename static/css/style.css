@@ -842,9 +842,4 @@ section {
   .section-end {
     margin: 3rem 0;
   }
-}
-@media (min-width: 768px) {
-  .section-end {
-    margin: 4rem 0;
-  }
 }/*# sourceMappingURL=style.css.map */
