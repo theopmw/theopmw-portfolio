@@ -3,7 +3,13 @@
 
 .contact-content-container {
   display: flex;
-  padding-top: 3rem;
+  // padding-top: 1rem;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
 
   .left-contact {
     flex: 2;
@@ -58,6 +64,7 @@
         border-radius: 50%;
         margin: 0;
         @include transition;
+        @include box-shadow-1;
         &:hover {
           background-color: var(--color-secondary);
         }
@@ -73,7 +80,11 @@
 
   .right-contact {
     flex: 3;
-    margin-left: 3rem;
+    margin-top: 1rem;
+
+    @include lg {
+      margin: 0 0 0 3rem;
+    }
 
     .input-control {
       margin: 1.5rem;

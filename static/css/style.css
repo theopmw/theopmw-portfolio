@@ -633,7 +633,13 @@
 
 .contact-content-container {
   display: flex;
-  padding-top: 3rem;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .contact-content-container {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
 }
 .contact-content-container .left-contact {
   flex: 2;
@@ -681,6 +687,7 @@
   border-radius: 50%;
   margin: 0;
   transition: all 0.4s ease-in-out;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 .contact-content-container .left-contact .contact-link a:hover {
   background-color: var(--color-secondary);
@@ -693,7 +700,12 @@
 }
 .contact-content-container .right-contact {
   flex: 3;
-  margin-left: 3rem;
+  margin-top: 1rem;
+}
+@media (min-width: 992px) {
+  .contact-content-container .right-contact {
+    margin: 0 0 0 3rem;
+  }
 }
 .contact-content-container .right-contact .input-control {
   margin: 1.5rem;
@@ -764,7 +776,7 @@ section {
 }
 @media (min-width: 768px) {
   section {
-    padding: 8rem;
+    padding: 3rem 8rem;
   }
 }
 
