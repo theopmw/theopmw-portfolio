@@ -403,6 +403,70 @@
   }
 }
 
+#databases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#databases .databases-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#databases .databases-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* just to make it look cleaner */
+  list-style-type: none;
+  justify-content: center;
+}
+#databases .databases-container li {
+  text-align: center;
+  font-family: "Montseratt", sans-serif;
+}
+@media (min-width: 0) {
+  #databases .databases-container li {
+    margin: 0.5rem;
+    height: 4.375rem;
+    width: 4.375rem;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  #databases .databases-container li {
+    margin: 0.75rem;
+    height: 7.5rem;
+    width: 7.5rem;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #databases .databases-container li {
+    margin: 1.5rem;
+    height: 9.375rem;
+    width: 9.375rem;
+  }
+}
+@media (min-width: 0) {
+  #databases .databases-container li img {
+    height: 3.125rem;
+  }
+}
+@media (min-width: 768px) {
+  #databases .databases-container li img {
+    height: 4.6875rem;
+  }
+}
+@media (min-width: 992px) {
+  #databases .databases-container li img {
+    height: 7.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #databases .databases-container li h3 {
+    padding: 0.625rem 0;
+  }
+}
+
 #version-control {
   display: flex;
   flex-direction: row;

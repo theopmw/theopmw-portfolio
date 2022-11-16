@@ -151,6 +151,71 @@
   }
 }
 
+#databases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .databases-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      /* just to make it look cleaner */
+      list-style-type: none;
+      justify-content: center;
+    }
+
+    li {
+      text-align: center;
+      font-family: 'Montseratt', sans-serif;
+
+      @include xs {
+        margin: 0.5rem;
+        height: 4.375rem;
+        width: 4.375rem;
+        font-size: 0.75rem;
+      }
+
+      @include md {
+        margin: 0.75rem;
+        height: 7.5rem;
+        width: 7.5rem;
+        font-size: 1.25rem;
+      }
+
+      @include lg {
+        margin: 1.5rem;
+        height: 9.375rem;
+        width: 9.375rem;
+      }
+
+      img {
+        @include xs {
+          height: 3.125rem;
+        }
+
+        @include md {
+          height: 4.6875rem;
+        }
+
+        @include lg {
+          height: 7.5rem;
+        }
+      }
+
+      h3 {
+        @include md {
+          padding: 0.625rem 0;
+        }
+      }
+    }
+  }
+}
+
 #version-control {
   display: flex;
   flex-direction: row;
