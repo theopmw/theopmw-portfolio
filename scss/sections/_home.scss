@@ -1,5 +1,6 @@
 @use '../components/mixins' as *;
 @use '../components/controls' as *;
+@use '../components/breakpoints' as *;
 
 .hero-wrapper {
   margin: 0;
@@ -78,13 +79,30 @@
     }
 
     .landing-heading {
-      font-size: 8rem;
+      font-size: 4rem;
       font-weight: 900;
       color: #000;
+
+      @include breakpoint(390px) {
+        font-size: 5rem;
+      }
+
+      @include sm {
+        font-size: 6rem;
+      }
+
+      @include lg {
+        font-size: 7rem;
+      }
+
+      @include lg {
+        font-size: 8rem;
+        padding-right: 6rem;
+      }
     }
 
     .landing-subheading {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 900;
       color: #000;
     }
