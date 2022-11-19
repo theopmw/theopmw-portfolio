@@ -1,421 +1,23 @@
 @use '../components/breakpoints' as *;
 @use '../components/footer' as *;
 
-#languages {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  .languages-container {
-    display: flex;
-    flex-wrap: wrap;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      /* just to make it look cleaner */
-      list-style-type: none;
-      justify-content: center;
-    }
-
-    li {
-      text-align: center;
-      font-family: 'Montseratt', sans-serif;
-
-      @include xs {
-        margin: 0.5rem;
-        height: 4.375rem;
-        width: 4.375rem;
-        font-size: 0.75rem;
-
-        @include md {
-          margin: 0.75rem;
-          height: 7.5rem;
-          width: 7.5rem;
-          font-size: 1.25rem;
-        }
-
-        @include lg {
-          margin: 1.5rem;
-          height: 9.375rem;
-          width: 9.375rem;
-        }
-      }
-
-      img {
-        @include xs {
-          height: 3.125rem;
-        }
-
-        @include md {
-          height: 4.6875rem;
-        }
-
-        @include lg {
-          height: 7.5rem;
-        }
-      }
-
-      h3 {
-        @include md {
-          padding: 0.625rem 0;
-        }
-      }
-    }
-  }
-}
-
-#frameworks {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  .frameworks-container {
-    display: flex;
-    flex-wrap: wrap;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      /* just to make it look cleaner */
-      list-style-type: none;
-      justify-content: center;
-    }
-
-    li {
-      text-align: center;
-      font-family: 'Montseratt', sans-serif;
-
-      @include xs {
-        margin: 0.5rem;
-        height: 4.375rem;
-        width: 4.375rem;
-        font-size: 0.75rem;
-
-        @include md {
-          margin: 0.75rem;
-          height: 7.5rem;
-          width: 7.5rem;
-          font-size: 1.25rem;
-        }
-
-        @include lg {
-          margin: 1.5rem;
-          height: 9.375rem;
-          width: 9.375rem;
-        }
-      }
-
-      h3 {
-        @include md {
-          padding: 0.625rem 0;
-        }
-      }
-
-      img {
-        @include xs {
-          height: 3.125rem;
-        }
-
-        @include md {
-          height: 4.6875rem;
-        }
-
-        @include lg {
-          height: 7.5rem;
-        }
-      }
-    }
-
-    img[src='./assets/img/frameworks/Materialize.svg'] {
-      @include xs {
-        width: 4.0625rem;
-      }
-
-      @include md {
-        width: 6.25rem;
-      }
-
-      @include lg {
-        width: 8.75rem;
-      }
-    }
-
-    h3 {
-      @include md {
-        padding: 0.625rem 0;
-      }
-    }
-  }
-}
-
-#databases {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  .databases-container {
-    display: flex;
-    flex-wrap: wrap;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      /* just to make it look cleaner */
-      list-style-type: none;
-      justify-content: center;
-    }
-
-    li {
-      text-align: center;
-      font-family: 'Montseratt', sans-serif;
-
-      @include xs {
-        margin: 0.5rem;
-        height: 4.375rem;
-        width: 4.375rem;
-        font-size: 0.75rem;
-      }
-
-      @include md {
-        margin: 0.75rem;
-        height: 7.5rem;
-        width: 7.5rem;
-        font-size: 1.25rem;
-      }
-
-      @include lg {
-        margin: 1.5rem;
-        height: 9.375rem;
-        width: 9.375rem;
-      }
-
-      img {
-        @include xs {
-          height: 3.125rem;
-        }
-
-        @include md {
-          height: 4.6875rem;
-        }
-
-        @include lg {
-          height: 7.5rem;
-        }
-      }
-
-      h3 {
-        @include md {
-          padding: 0.625rem 0;
-        }
-      }
-    }
-  }
-}
-
-#version-control {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  .version-control-container {
-    display: flex;
-    flex-wrap: wrap;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      /* just to make it look cleaner */
-      list-style-type: none;
-      justify-content: center;
-    }
-
-    li {
-      text-align: center;
-      font-family: 'Montseratt', sans-serif;
-
-      @include xs {
-        margin: 0.5rem;
-        height: 4.375rem;
-        width: 4.375rem;
-        font-size: 0.75rem;
-      }
-
-      @include md {
-        margin: 0.75rem;
-        height: 7.5rem;
-        width: 7.5rem;
-        font-size: 1.25rem;
-      }
-
-      @include lg {
-        margin: 1.5rem;
-        height: 9.375rem;
-        width: 9.375rem;
-      }
-
-      img {
-        @include xs {
-          height: 3.125rem;
-        }
-
-        @include md {
-          height: 4.6875rem;
-        }
-
-        @include lg {
-          height: 7.5rem;
-        }
-      }
-
-      h3 {
-        @include md {
-          padding: 0.625rem 0;
-        }
-      }
-    }
-  }
-}
-
-#design {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  .design-container {
-    display: flex;
-    flex-wrap: wrap;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      /* just to make it look cleaner */
-      list-style-type: none;
-      justify-content: center;
-    }
-
-    li {
-      text-align: center;
-      font-family: 'Montseratt', sans-serif;
-
-      @include xs {
-        margin: 0.5rem;
-        height: 4.375rem;
-        width: 4.375rem;
-        font-size: 0.75rem;
-
-        @include md {
-          margin: 0.75rem;
-          height: 7.5rem;
-          width: 7.5rem;
-          font-size: 1.25rem;
-        }
-
-        @include lg {
-          margin: 1.5rem;
-          height: 9.375rem;
-          width: 9.375rem;
-        }
-      }
-
-      img {
-        @include xs {
-          height: 3.125rem;
-        }
-
-        @include md {
-          height: 4.6875rem;
-        }
-
-        @include lg {
-          height: 7.5rem;
-        }
-      }
-
-      h3 {
-        @include md {
-          padding: 0.625rem 0;
-        }
-      }
-    }
-  }
-}
-
-#other-tools {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  .other-tools-container {
-    display: flex;
-    flex-wrap: wrap;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      /* just to make it look cleaner */
-      list-style-type: none;
-      justify-content: center;
-    }
-
-    li {
-      text-align: center;
-      font-family: 'Montseratt', sans-serif;
-
-      @include xs {
-        margin: 0.5rem;
-        height: 4.375rem;
-        width: 4.375rem;
-        font-size: 0.75rem;
-
-        @include md {
-          margin: 0.75rem;
-          height: 7.5rem;
-          width: 7.5rem;
-          font-size: 1.25rem;
-        }
-
-        @include lg {
-          margin: 1.5rem;
-          height: 9.375rem;
-          width: 9.375rem;
-        }
-      }
-
-      img {
-        @include xs {
-          height: 3.125rem;
-        }
-
-        @include md {
-          height: 4.6875rem;
-        }
-
-        @include lg {
-          height: 7.5rem;
-        }
-      }
-
-      h3 {
-        @include md {
-          padding: 0.625rem 0;
-        }
-      }
-    }
-  }
-}
-
+#languages,
+#databases,
+#frameworks,
+#version-control,
+#design,
+#other-tools,
 #current {
   display: flex;
   flex-direction: row;
   justify-content: center;
 
+  .languages-container,
+  .frameworks-container,
+  .databases-container,
+  .version-control-container,
+  .design-container,
+  .other-tools-container,
   .currently-learning-container {
     display: flex;
     flex-wrap: wrap;
@@ -423,8 +25,6 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-
-      /* just to make it look cleaner */
       list-style-type: none;
       justify-content: center;
     }
@@ -464,6 +64,20 @@
 
         @include lg {
           height: 7.5rem;
+        }
+      }
+
+      img[src='./assets/img/frameworks/Materialize.svg'] {
+        @include xs {
+          width: 4.0625rem;
+        }
+
+        @include md {
+          width: 6.25rem;
+        }
+
+        @include lg {
+          width: 8.75rem;
         }
       }
 

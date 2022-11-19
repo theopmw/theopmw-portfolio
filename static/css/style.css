@@ -255,432 +255,225 @@
   font-size: 10px;
 }
 
-#languages {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#languages .languages-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-#languages .languages-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  /* just to make it look cleaner */
-  list-style-type: none;
-  justify-content: center;
-}
-#languages .languages-container li {
-  text-align: center;
-  font-family: "Montseratt", sans-serif;
-}
-@media (min-width: 0) {
-  #languages .languages-container li {
-    margin: 0.5rem;
-    height: 4.375rem;
-    width: 4.375rem;
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 0) and (min-width: 768px) {
-  #languages .languages-container li {
-    margin: 0.75rem;
-    height: 7.5rem;
-    width: 7.5rem;
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 0) and (min-width: 992px) {
-  #languages .languages-container li {
-    margin: 1.5rem;
-    height: 9.375rem;
-    width: 9.375rem;
-  }
-}
-@media (min-width: 0) {
-  #languages .languages-container li img {
-    height: 3.125rem;
-  }
-}
-@media (min-width: 768px) {
-  #languages .languages-container li img {
-    height: 4.6875rem;
-  }
-}
-@media (min-width: 992px) {
-  #languages .languages-container li img {
-    height: 7.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #languages .languages-container li h3 {
-    padding: 0.625rem 0;
-  }
-}
-
-#frameworks {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#frameworks .frameworks-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-#frameworks .frameworks-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  /* just to make it look cleaner */
-  list-style-type: none;
-  justify-content: center;
-}
-#frameworks .frameworks-container li {
-  text-align: center;
-  font-family: "Montseratt", sans-serif;
-}
-@media (min-width: 0) {
-  #frameworks .frameworks-container li {
-    margin: 0.5rem;
-    height: 4.375rem;
-    width: 4.375rem;
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 0) and (min-width: 768px) {
-  #frameworks .frameworks-container li {
-    margin: 0.75rem;
-    height: 7.5rem;
-    width: 7.5rem;
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 0) and (min-width: 992px) {
-  #frameworks .frameworks-container li {
-    margin: 1.5rem;
-    height: 9.375rem;
-    width: 9.375rem;
-  }
-}
-@media (min-width: 768px) {
-  #frameworks .frameworks-container li h3 {
-    padding: 0.625rem 0;
-  }
-}
-@media (min-width: 0) {
-  #frameworks .frameworks-container li img {
-    height: 3.125rem;
-  }
-}
-@media (min-width: 768px) {
-  #frameworks .frameworks-container li img {
-    height: 4.6875rem;
-  }
-}
-@media (min-width: 992px) {
-  #frameworks .frameworks-container li img {
-    height: 7.5rem;
-  }
-}
-@media (min-width: 0) {
-  #frameworks .frameworks-container img[src="./assets/img/frameworks/Materialize.svg"] {
-    width: 4.0625rem;
-  }
-}
-@media (min-width: 768px) {
-  #frameworks .frameworks-container img[src="./assets/img/frameworks/Materialize.svg"] {
-    width: 6.25rem;
-  }
-}
-@media (min-width: 992px) {
-  #frameworks .frameworks-container img[src="./assets/img/frameworks/Materialize.svg"] {
-    width: 8.75rem;
-  }
-}
-@media (min-width: 768px) {
-  #frameworks .frameworks-container h3 {
-    padding: 0.625rem 0;
-  }
-}
-
-#databases {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#databases .databases-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-#databases .databases-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  /* just to make it look cleaner */
-  list-style-type: none;
-  justify-content: center;
-}
-#databases .databases-container li {
-  text-align: center;
-  font-family: "Montseratt", sans-serif;
-}
-@media (min-width: 0) {
-  #databases .databases-container li {
-    margin: 0.5rem;
-    height: 4.375rem;
-    width: 4.375rem;
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 768px) {
-  #databases .databases-container li {
-    margin: 0.75rem;
-    height: 7.5rem;
-    width: 7.5rem;
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 992px) {
-  #databases .databases-container li {
-    margin: 1.5rem;
-    height: 9.375rem;
-    width: 9.375rem;
-  }
-}
-@media (min-width: 0) {
-  #databases .databases-container li img {
-    height: 3.125rem;
-  }
-}
-@media (min-width: 768px) {
-  #databases .databases-container li img {
-    height: 4.6875rem;
-  }
-}
-@media (min-width: 992px) {
-  #databases .databases-container li img {
-    height: 7.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #databases .databases-container li h3 {
-    padding: 0.625rem 0;
-  }
-}
-
-#version-control {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#version-control .version-control-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-#version-control .version-control-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  /* just to make it look cleaner */
-  list-style-type: none;
-  justify-content: center;
-}
-#version-control .version-control-container li {
-  text-align: center;
-  font-family: "Montseratt", sans-serif;
-}
-@media (min-width: 0) {
-  #version-control .version-control-container li {
-    margin: 0.5rem;
-    height: 4.375rem;
-    width: 4.375rem;
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 768px) {
-  #version-control .version-control-container li {
-    margin: 0.75rem;
-    height: 7.5rem;
-    width: 7.5rem;
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 992px) {
-  #version-control .version-control-container li {
-    margin: 1.5rem;
-    height: 9.375rem;
-    width: 9.375rem;
-  }
-}
-@media (min-width: 0) {
-  #version-control .version-control-container li img {
-    height: 3.125rem;
-  }
-}
-@media (min-width: 768px) {
-  #version-control .version-control-container li img {
-    height: 4.6875rem;
-  }
-}
-@media (min-width: 992px) {
-  #version-control .version-control-container li img {
-    height: 7.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #version-control .version-control-container li h3 {
-    padding: 0.625rem 0;
-  }
-}
-
-#design {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#design .design-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-#design .design-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  /* just to make it look cleaner */
-  list-style-type: none;
-  justify-content: center;
-}
-#design .design-container li {
-  text-align: center;
-  font-family: "Montseratt", sans-serif;
-}
-@media (min-width: 0) {
-  #design .design-container li {
-    margin: 0.5rem;
-    height: 4.375rem;
-    width: 4.375rem;
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 0) and (min-width: 768px) {
-  #design .design-container li {
-    margin: 0.75rem;
-    height: 7.5rem;
-    width: 7.5rem;
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 0) and (min-width: 992px) {
-  #design .design-container li {
-    margin: 1.5rem;
-    height: 9.375rem;
-    width: 9.375rem;
-  }
-}
-@media (min-width: 0) {
-  #design .design-container li img {
-    height: 3.125rem;
-  }
-}
-@media (min-width: 768px) {
-  #design .design-container li img {
-    height: 4.6875rem;
-  }
-}
-@media (min-width: 992px) {
-  #design .design-container li img {
-    height: 7.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #design .design-container li h3 {
-    padding: 0.625rem 0;
-  }
-}
-
-#other-tools {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#other-tools .other-tools-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-#other-tools .other-tools-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  /* just to make it look cleaner */
-  list-style-type: none;
-  justify-content: center;
-}
-#other-tools .other-tools-container li {
-  text-align: center;
-  font-family: "Montseratt", sans-serif;
-}
-@media (min-width: 0) {
-  #other-tools .other-tools-container li {
-    margin: 0.5rem;
-    height: 4.375rem;
-    width: 4.375rem;
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 0) and (min-width: 768px) {
-  #other-tools .other-tools-container li {
-    margin: 0.75rem;
-    height: 7.5rem;
-    width: 7.5rem;
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 0) and (min-width: 992px) {
-  #other-tools .other-tools-container li {
-    margin: 1.5rem;
-    height: 9.375rem;
-    width: 9.375rem;
-  }
-}
-@media (min-width: 0) {
-  #other-tools .other-tools-container li img {
-    height: 3.125rem;
-  }
-}
-@media (min-width: 768px) {
-  #other-tools .other-tools-container li img {
-    height: 4.6875rem;
-  }
-}
-@media (min-width: 992px) {
-  #other-tools .other-tools-container li img {
-    height: 7.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #other-tools .other-tools-container li h3 {
-    padding: 0.625rem 0;
-  }
-}
-
+#languages,
+#databases,
+#frameworks,
+#version-control,
+#design,
+#other-tools,
 #current {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+#languages .languages-container,
+#languages .frameworks-container,
+#languages .databases-container,
+#languages .version-control-container,
+#languages .design-container,
+#languages .other-tools-container,
+#languages .currently-learning-container,
+#databases .languages-container,
+#databases .frameworks-container,
+#databases .databases-container,
+#databases .version-control-container,
+#databases .design-container,
+#databases .other-tools-container,
+#databases .currently-learning-container,
+#frameworks .languages-container,
+#frameworks .frameworks-container,
+#frameworks .databases-container,
+#frameworks .version-control-container,
+#frameworks .design-container,
+#frameworks .other-tools-container,
+#frameworks .currently-learning-container,
+#version-control .languages-container,
+#version-control .frameworks-container,
+#version-control .databases-container,
+#version-control .version-control-container,
+#version-control .design-container,
+#version-control .other-tools-container,
+#version-control .currently-learning-container,
+#design .languages-container,
+#design .frameworks-container,
+#design .databases-container,
+#design .version-control-container,
+#design .design-container,
+#design .other-tools-container,
+#design .currently-learning-container,
+#other-tools .languages-container,
+#other-tools .frameworks-container,
+#other-tools .databases-container,
+#other-tools .version-control-container,
+#other-tools .design-container,
+#other-tools .other-tools-container,
+#other-tools .currently-learning-container,
+#current .languages-container,
+#current .frameworks-container,
+#current .databases-container,
+#current .version-control-container,
+#current .design-container,
+#current .other-tools-container,
 #current .currently-learning-container {
   display: flex;
   flex-wrap: wrap;
 }
+#languages .languages-container ul,
+#languages .frameworks-container ul,
+#languages .databases-container ul,
+#languages .version-control-container ul,
+#languages .design-container ul,
+#languages .other-tools-container ul,
+#languages .currently-learning-container ul,
+#databases .languages-container ul,
+#databases .frameworks-container ul,
+#databases .databases-container ul,
+#databases .version-control-container ul,
+#databases .design-container ul,
+#databases .other-tools-container ul,
+#databases .currently-learning-container ul,
+#frameworks .languages-container ul,
+#frameworks .frameworks-container ul,
+#frameworks .databases-container ul,
+#frameworks .version-control-container ul,
+#frameworks .design-container ul,
+#frameworks .other-tools-container ul,
+#frameworks .currently-learning-container ul,
+#version-control .languages-container ul,
+#version-control .frameworks-container ul,
+#version-control .databases-container ul,
+#version-control .version-control-container ul,
+#version-control .design-container ul,
+#version-control .other-tools-container ul,
+#version-control .currently-learning-container ul,
+#design .languages-container ul,
+#design .frameworks-container ul,
+#design .databases-container ul,
+#design .version-control-container ul,
+#design .design-container ul,
+#design .other-tools-container ul,
+#design .currently-learning-container ul,
+#other-tools .languages-container ul,
+#other-tools .frameworks-container ul,
+#other-tools .databases-container ul,
+#other-tools .version-control-container ul,
+#other-tools .design-container ul,
+#other-tools .other-tools-container ul,
+#other-tools .currently-learning-container ul,
+#current .languages-container ul,
+#current .frameworks-container ul,
+#current .databases-container ul,
+#current .version-control-container ul,
+#current .design-container ul,
+#current .other-tools-container ul,
 #current .currently-learning-container ul {
   display: flex;
   flex-wrap: wrap;
-  /* just to make it look cleaner */
   list-style-type: none;
   justify-content: center;
 }
+#languages .languages-container li,
+#languages .frameworks-container li,
+#languages .databases-container li,
+#languages .version-control-container li,
+#languages .design-container li,
+#languages .other-tools-container li,
+#languages .currently-learning-container li,
+#databases .languages-container li,
+#databases .frameworks-container li,
+#databases .databases-container li,
+#databases .version-control-container li,
+#databases .design-container li,
+#databases .other-tools-container li,
+#databases .currently-learning-container li,
+#frameworks .languages-container li,
+#frameworks .frameworks-container li,
+#frameworks .databases-container li,
+#frameworks .version-control-container li,
+#frameworks .design-container li,
+#frameworks .other-tools-container li,
+#frameworks .currently-learning-container li,
+#version-control .languages-container li,
+#version-control .frameworks-container li,
+#version-control .databases-container li,
+#version-control .version-control-container li,
+#version-control .design-container li,
+#version-control .other-tools-container li,
+#version-control .currently-learning-container li,
+#design .languages-container li,
+#design .frameworks-container li,
+#design .databases-container li,
+#design .version-control-container li,
+#design .design-container li,
+#design .other-tools-container li,
+#design .currently-learning-container li,
+#other-tools .languages-container li,
+#other-tools .frameworks-container li,
+#other-tools .databases-container li,
+#other-tools .version-control-container li,
+#other-tools .design-container li,
+#other-tools .other-tools-container li,
+#other-tools .currently-learning-container li,
+#current .languages-container li,
+#current .frameworks-container li,
+#current .databases-container li,
+#current .version-control-container li,
+#current .design-container li,
+#current .other-tools-container li,
 #current .currently-learning-container li {
   text-align: center;
   font-family: "Montseratt", sans-serif;
 }
 @media (min-width: 0) {
-  #current .currently-learning-container li {
+  #languages .languages-container li,
+#languages .frameworks-container li,
+#languages .databases-container li,
+#languages .version-control-container li,
+#languages .design-container li,
+#languages .other-tools-container li,
+#languages .currently-learning-container li,
+#databases .languages-container li,
+#databases .frameworks-container li,
+#databases .databases-container li,
+#databases .version-control-container li,
+#databases .design-container li,
+#databases .other-tools-container li,
+#databases .currently-learning-container li,
+#frameworks .languages-container li,
+#frameworks .frameworks-container li,
+#frameworks .databases-container li,
+#frameworks .version-control-container li,
+#frameworks .design-container li,
+#frameworks .other-tools-container li,
+#frameworks .currently-learning-container li,
+#version-control .languages-container li,
+#version-control .frameworks-container li,
+#version-control .databases-container li,
+#version-control .version-control-container li,
+#version-control .design-container li,
+#version-control .other-tools-container li,
+#version-control .currently-learning-container li,
+#design .languages-container li,
+#design .frameworks-container li,
+#design .databases-container li,
+#design .version-control-container li,
+#design .design-container li,
+#design .other-tools-container li,
+#design .currently-learning-container li,
+#other-tools .languages-container li,
+#other-tools .frameworks-container li,
+#other-tools .databases-container li,
+#other-tools .version-control-container li,
+#other-tools .design-container li,
+#other-tools .other-tools-container li,
+#other-tools .currently-learning-container li,
+#current .languages-container li,
+#current .frameworks-container li,
+#current .databases-container li,
+#current .version-control-container li,
+#current .design-container li,
+#current .other-tools-container li,
+#current .currently-learning-container li {
     margin: 0.5rem;
     height: 4.375rem;
     width: 4.375rem;
@@ -688,7 +481,55 @@
   }
 }
 @media (min-width: 0) and (min-width: 768px) {
-  #current .currently-learning-container li {
+  #languages .languages-container li,
+#languages .frameworks-container li,
+#languages .databases-container li,
+#languages .version-control-container li,
+#languages .design-container li,
+#languages .other-tools-container li,
+#languages .currently-learning-container li,
+#databases .languages-container li,
+#databases .frameworks-container li,
+#databases .databases-container li,
+#databases .version-control-container li,
+#databases .design-container li,
+#databases .other-tools-container li,
+#databases .currently-learning-container li,
+#frameworks .languages-container li,
+#frameworks .frameworks-container li,
+#frameworks .databases-container li,
+#frameworks .version-control-container li,
+#frameworks .design-container li,
+#frameworks .other-tools-container li,
+#frameworks .currently-learning-container li,
+#version-control .languages-container li,
+#version-control .frameworks-container li,
+#version-control .databases-container li,
+#version-control .version-control-container li,
+#version-control .design-container li,
+#version-control .other-tools-container li,
+#version-control .currently-learning-container li,
+#design .languages-container li,
+#design .frameworks-container li,
+#design .databases-container li,
+#design .version-control-container li,
+#design .design-container li,
+#design .other-tools-container li,
+#design .currently-learning-container li,
+#other-tools .languages-container li,
+#other-tools .frameworks-container li,
+#other-tools .databases-container li,
+#other-tools .version-control-container li,
+#other-tools .design-container li,
+#other-tools .other-tools-container li,
+#other-tools .currently-learning-container li,
+#current .languages-container li,
+#current .frameworks-container li,
+#current .databases-container li,
+#current .version-control-container li,
+#current .design-container li,
+#current .other-tools-container li,
+#current .currently-learning-container li {
     margin: 0.75rem;
     height: 7.5rem;
     width: 7.5rem;
@@ -696,29 +537,428 @@
   }
 }
 @media (min-width: 0) and (min-width: 992px) {
-  #current .currently-learning-container li {
+  #languages .languages-container li,
+#languages .frameworks-container li,
+#languages .databases-container li,
+#languages .version-control-container li,
+#languages .design-container li,
+#languages .other-tools-container li,
+#languages .currently-learning-container li,
+#databases .languages-container li,
+#databases .frameworks-container li,
+#databases .databases-container li,
+#databases .version-control-container li,
+#databases .design-container li,
+#databases .other-tools-container li,
+#databases .currently-learning-container li,
+#frameworks .languages-container li,
+#frameworks .frameworks-container li,
+#frameworks .databases-container li,
+#frameworks .version-control-container li,
+#frameworks .design-container li,
+#frameworks .other-tools-container li,
+#frameworks .currently-learning-container li,
+#version-control .languages-container li,
+#version-control .frameworks-container li,
+#version-control .databases-container li,
+#version-control .version-control-container li,
+#version-control .design-container li,
+#version-control .other-tools-container li,
+#version-control .currently-learning-container li,
+#design .languages-container li,
+#design .frameworks-container li,
+#design .databases-container li,
+#design .version-control-container li,
+#design .design-container li,
+#design .other-tools-container li,
+#design .currently-learning-container li,
+#other-tools .languages-container li,
+#other-tools .frameworks-container li,
+#other-tools .databases-container li,
+#other-tools .version-control-container li,
+#other-tools .design-container li,
+#other-tools .other-tools-container li,
+#other-tools .currently-learning-container li,
+#current .languages-container li,
+#current .frameworks-container li,
+#current .databases-container li,
+#current .version-control-container li,
+#current .design-container li,
+#current .other-tools-container li,
+#current .currently-learning-container li {
     margin: 1.5rem;
     height: 9.375rem;
     width: 9.375rem;
   }
 }
 @media (min-width: 0) {
-  #current .currently-learning-container li img {
+  #languages .languages-container li img,
+#languages .frameworks-container li img,
+#languages .databases-container li img,
+#languages .version-control-container li img,
+#languages .design-container li img,
+#languages .other-tools-container li img,
+#languages .currently-learning-container li img,
+#databases .languages-container li img,
+#databases .frameworks-container li img,
+#databases .databases-container li img,
+#databases .version-control-container li img,
+#databases .design-container li img,
+#databases .other-tools-container li img,
+#databases .currently-learning-container li img,
+#frameworks .languages-container li img,
+#frameworks .frameworks-container li img,
+#frameworks .databases-container li img,
+#frameworks .version-control-container li img,
+#frameworks .design-container li img,
+#frameworks .other-tools-container li img,
+#frameworks .currently-learning-container li img,
+#version-control .languages-container li img,
+#version-control .frameworks-container li img,
+#version-control .databases-container li img,
+#version-control .version-control-container li img,
+#version-control .design-container li img,
+#version-control .other-tools-container li img,
+#version-control .currently-learning-container li img,
+#design .languages-container li img,
+#design .frameworks-container li img,
+#design .databases-container li img,
+#design .version-control-container li img,
+#design .design-container li img,
+#design .other-tools-container li img,
+#design .currently-learning-container li img,
+#other-tools .languages-container li img,
+#other-tools .frameworks-container li img,
+#other-tools .databases-container li img,
+#other-tools .version-control-container li img,
+#other-tools .design-container li img,
+#other-tools .other-tools-container li img,
+#other-tools .currently-learning-container li img,
+#current .languages-container li img,
+#current .frameworks-container li img,
+#current .databases-container li img,
+#current .version-control-container li img,
+#current .design-container li img,
+#current .other-tools-container li img,
+#current .currently-learning-container li img {
     height: 3.125rem;
   }
 }
 @media (min-width: 768px) {
-  #current .currently-learning-container li img {
+  #languages .languages-container li img,
+#languages .frameworks-container li img,
+#languages .databases-container li img,
+#languages .version-control-container li img,
+#languages .design-container li img,
+#languages .other-tools-container li img,
+#languages .currently-learning-container li img,
+#databases .languages-container li img,
+#databases .frameworks-container li img,
+#databases .databases-container li img,
+#databases .version-control-container li img,
+#databases .design-container li img,
+#databases .other-tools-container li img,
+#databases .currently-learning-container li img,
+#frameworks .languages-container li img,
+#frameworks .frameworks-container li img,
+#frameworks .databases-container li img,
+#frameworks .version-control-container li img,
+#frameworks .design-container li img,
+#frameworks .other-tools-container li img,
+#frameworks .currently-learning-container li img,
+#version-control .languages-container li img,
+#version-control .frameworks-container li img,
+#version-control .databases-container li img,
+#version-control .version-control-container li img,
+#version-control .design-container li img,
+#version-control .other-tools-container li img,
+#version-control .currently-learning-container li img,
+#design .languages-container li img,
+#design .frameworks-container li img,
+#design .databases-container li img,
+#design .version-control-container li img,
+#design .design-container li img,
+#design .other-tools-container li img,
+#design .currently-learning-container li img,
+#other-tools .languages-container li img,
+#other-tools .frameworks-container li img,
+#other-tools .databases-container li img,
+#other-tools .version-control-container li img,
+#other-tools .design-container li img,
+#other-tools .other-tools-container li img,
+#other-tools .currently-learning-container li img,
+#current .languages-container li img,
+#current .frameworks-container li img,
+#current .databases-container li img,
+#current .version-control-container li img,
+#current .design-container li img,
+#current .other-tools-container li img,
+#current .currently-learning-container li img {
     height: 4.6875rem;
   }
 }
 @media (min-width: 992px) {
-  #current .currently-learning-container li img {
+  #languages .languages-container li img,
+#languages .frameworks-container li img,
+#languages .databases-container li img,
+#languages .version-control-container li img,
+#languages .design-container li img,
+#languages .other-tools-container li img,
+#languages .currently-learning-container li img,
+#databases .languages-container li img,
+#databases .frameworks-container li img,
+#databases .databases-container li img,
+#databases .version-control-container li img,
+#databases .design-container li img,
+#databases .other-tools-container li img,
+#databases .currently-learning-container li img,
+#frameworks .languages-container li img,
+#frameworks .frameworks-container li img,
+#frameworks .databases-container li img,
+#frameworks .version-control-container li img,
+#frameworks .design-container li img,
+#frameworks .other-tools-container li img,
+#frameworks .currently-learning-container li img,
+#version-control .languages-container li img,
+#version-control .frameworks-container li img,
+#version-control .databases-container li img,
+#version-control .version-control-container li img,
+#version-control .design-container li img,
+#version-control .other-tools-container li img,
+#version-control .currently-learning-container li img,
+#design .languages-container li img,
+#design .frameworks-container li img,
+#design .databases-container li img,
+#design .version-control-container li img,
+#design .design-container li img,
+#design .other-tools-container li img,
+#design .currently-learning-container li img,
+#other-tools .languages-container li img,
+#other-tools .frameworks-container li img,
+#other-tools .databases-container li img,
+#other-tools .version-control-container li img,
+#other-tools .design-container li img,
+#other-tools .other-tools-container li img,
+#other-tools .currently-learning-container li img,
+#current .languages-container li img,
+#current .frameworks-container li img,
+#current .databases-container li img,
+#current .version-control-container li img,
+#current .design-container li img,
+#current .other-tools-container li img,
+#current .currently-learning-container li img {
     height: 7.5rem;
   }
 }
+@media (min-width: 0) {
+  #languages .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"] {
+    width: 4.0625rem;
+  }
+}
 @media (min-width: 768px) {
-  #current .currently-learning-container li h3 {
+  #languages .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"] {
+    width: 6.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #languages .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#languages .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#databases .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#frameworks .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#version-control .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#design .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#other-tools .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .languages-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .frameworks-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .databases-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .version-control-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .design-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .other-tools-container li img[src="./assets/img/frameworks/Materialize.svg"],
+#current .currently-learning-container li img[src="./assets/img/frameworks/Materialize.svg"] {
+    width: 8.75rem;
+  }
+}
+@media (min-width: 768px) {
+  #languages .languages-container li h3,
+#languages .frameworks-container li h3,
+#languages .databases-container li h3,
+#languages .version-control-container li h3,
+#languages .design-container li h3,
+#languages .other-tools-container li h3,
+#languages .currently-learning-container li h3,
+#databases .languages-container li h3,
+#databases .frameworks-container li h3,
+#databases .databases-container li h3,
+#databases .version-control-container li h3,
+#databases .design-container li h3,
+#databases .other-tools-container li h3,
+#databases .currently-learning-container li h3,
+#frameworks .languages-container li h3,
+#frameworks .frameworks-container li h3,
+#frameworks .databases-container li h3,
+#frameworks .version-control-container li h3,
+#frameworks .design-container li h3,
+#frameworks .other-tools-container li h3,
+#frameworks .currently-learning-container li h3,
+#version-control .languages-container li h3,
+#version-control .frameworks-container li h3,
+#version-control .databases-container li h3,
+#version-control .version-control-container li h3,
+#version-control .design-container li h3,
+#version-control .other-tools-container li h3,
+#version-control .currently-learning-container li h3,
+#design .languages-container li h3,
+#design .frameworks-container li h3,
+#design .databases-container li h3,
+#design .version-control-container li h3,
+#design .design-container li h3,
+#design .other-tools-container li h3,
+#design .currently-learning-container li h3,
+#other-tools .languages-container li h3,
+#other-tools .frameworks-container li h3,
+#other-tools .databases-container li h3,
+#other-tools .version-control-container li h3,
+#other-tools .design-container li h3,
+#other-tools .other-tools-container li h3,
+#other-tools .currently-learning-container li h3,
+#current .languages-container li h3,
+#current .frameworks-container li h3,
+#current .databases-container li h3,
+#current .version-control-container li h3,
+#current .design-container li h3,
+#current .other-tools-container li h3,
+#current .currently-learning-container li h3 {
     padding: 0.625rem 0;
   }
 }
