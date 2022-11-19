@@ -16,7 +16,7 @@ const versionControl = ['Git', 'GitHub'];
 
 const design = ['Balsamiq', 'Figma'];
 
-const other = ['Heroku', 'AWS', 'Stripe'];
+const other = ['Heroku', 'AWS', 'Stripe', 'Google-Maps'];
 
 const currentlyLearning = ['React'];
 
@@ -110,6 +110,9 @@ designDiv.innerHTML += designList;
 // append all other tools to #other-tools
 let otherDiv = document.getElementById('other-tools');
 otherDiv.innerHTML += otherList;
+
+// Update Google Maps API text
+$('.skills-item h3:contains(Google-Maps)').text('Google Maps API');
 
 // append all currently learning to #current
 let currentDiv = document.getElementById('current');
