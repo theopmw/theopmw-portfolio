@@ -595,6 +595,70 @@
   }
 }
 
+#other-tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#other-tools .other-tools-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#other-tools .other-tools-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* just to make it look cleaner */
+  list-style-type: none;
+  justify-content: center;
+}
+#other-tools .other-tools-container li {
+  text-align: center;
+  font-family: "Montseratt", sans-serif;
+}
+@media (min-width: 0) {
+  #other-tools .other-tools-container li {
+    margin: 0.5rem;
+    height: 4.375rem;
+    width: 4.375rem;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 0) and (min-width: 768px) {
+  #other-tools .other-tools-container li {
+    margin: 0.75rem;
+    height: 7.5rem;
+    width: 7.5rem;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 0) and (min-width: 992px) {
+  #other-tools .other-tools-container li {
+    margin: 1.5rem;
+    height: 9.375rem;
+    width: 9.375rem;
+  }
+}
+@media (min-width: 0) {
+  #other-tools .other-tools-container li img {
+    height: 3.125rem;
+  }
+}
+@media (min-width: 768px) {
+  #other-tools .other-tools-container li img {
+    height: 4.6875rem;
+  }
+}
+@media (min-width: 992px) {
+  #other-tools .other-tools-container li img {
+    height: 7.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #other-tools .other-tools-container li h3 {
+    padding: 0.625rem 0;
+  }
+}
+
 .projects {
   display: grid;
   grid-gap: 2rem;

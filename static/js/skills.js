@@ -16,7 +16,7 @@ const versionControl = ['Git', 'GitHub'];
 
 const design = ['Balsamiq', 'Figma'];
 
-const other = ['Heroku', 'Stripe', 'AWS'];
+const other = ['Heroku', 'AWS', 'Stripe'];
 
 // set variables
 let imgType = '.svg';
@@ -25,11 +25,14 @@ let imgs_frameworks = './assets/img/frameworks/';
 let imgs_databases = './assets/img/databases/';
 let imgs_version_control = './assets/img/version-control/';
 let imgs_design = './assets/img/design/';
+let imgs_other = './assets/img/other-tools/';
+
 let ul_languages = "<div class='languages-container'><ul>";
 let ul_frameworks = "<div class='frameworks-container'><ul>";
 let ul_databases = "<div class='databases-container'><ul>";
 let ul_version_control = "<div class='version-control-container'><ul>";
 let ul_design = "<div class='design-container'><ul>";
+let ul_other = "<div class='other-tools-container'><ul>";
 
 let languagesList = ul_languages;
 
@@ -40,6 +43,8 @@ let databasesList = ul_databases;
 let versionControlList = ul_version_control;
 
 let designList = ul_design;
+
+let otherList = ul_other;
 
 languages.map((language) => {
   languagesList += `<li class="skills-item"><img src="${imgs_languages}${language}${imgType}" alt="${language}"><h3>${language}</h3></li>`;
@@ -66,6 +71,11 @@ design.map((design) => {
 });
 ul_design += '</ul></div>';
 
+other.map((other) => {
+  otherList += `<li class="skills-item"><img src="${imgs_other}${other}${imgType}" alt="${other}"><h3>${other}</h3></li>`;
+});
+ul_other += '</ul></div>';
+
 // append all languages to #languages
 let languagesDiv = document.getElementById('languages');
 languagesDiv.innerHTML += languagesList;
@@ -82,6 +92,10 @@ databasesDiv.innerHTML += databasesList;
 let versionControlDiv = document.getElementById('version-control');
 versionControlDiv.innerHTML += versionControlList;
 
-// append all version control to #design
+// append all design to #design
 let designDiv = document.getElementById('design');
 designDiv.innerHTML += designList;
+
+// append all other tools to #other-tools
+let otherDiv = document.getElementById('other-tools');
+otherDiv.innerHTML += otherList;
