@@ -1,4 +1,4 @@
-const languages = ['HTML', 'CSS', 'JavaScript', 'Python'];
+const languages = ['HTML', 'CSS', 'Javascript', 'Python'];
 
 const frameworks = [
   'Bootstrap',
