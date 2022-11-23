@@ -6,6 +6,7 @@
 @use 'components/breakpoints' as *;
 @use 'sections/portfolio' as *;
 @use 'sections/contact' as *;
+@use 'components/buttons' as *;
 
 :root {
   --color-primary: #31657d;

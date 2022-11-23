@@ -1,0 +1,43 @@
+@use '../components/breakpoints' as *;
+@use '../components/mixins' as *;
+
+.submit-btn {
+  button {
+    border-radius: 30px;
+    border: 1px solid var(--color-grey-4);
+
+    .main-btn {
+      font-family: 'Montseratt', sans-serif;
+      font-weight: 600;
+      // position: relative;
+      border: none;
+      display: flex;
+      align-items: center;
+      @include transition;
+      border-radius: 30px;
+
+      .btn-text {
+        padding: 0 2rem;
+        text-transform: uppercase;
+        // color: var(--color-grey-4);
+      }
+
+      .btn-icon {
+        background-color: var(--color-grey-4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 1rem;
+        i {
+          color: var(--color-white);
+        }
+      }
+      &:hover {
+        background-color: var(--color-grey-4);
+        border-radius: 30px;
+        color: var(--color-white);
+      }
+    }
+  }
+}
