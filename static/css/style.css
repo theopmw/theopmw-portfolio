@@ -1239,7 +1239,7 @@
 
 .submit-btn button {
   border-radius: 30px;
-  border: 1px solid var(--color-grey-4);
+  border: none;
 }
 .submit-btn button .main-btn {
   font-family: "Montseratt", sans-serif;
