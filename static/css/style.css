@@ -1224,6 +1224,16 @@
   border: none;
   width: 100%;
 }
+.contact-content-container .right-contact .input-control input::-moz-placeholder, .contact-content-container .right-contact .input-control textarea::-moz-placeholder {
+  color: #000;
+}
+.contact-content-container .right-contact .input-control input:-ms-input-placeholder, .contact-content-container .right-contact .input-control textarea:-ms-input-placeholder {
+  color: #000;
+}
+.contact-content-container .right-contact .input-control input::placeholder,
+.contact-content-container .right-contact .input-control textarea::placeholder {
+  color: #000;
+}
 
 .submit-btn button {
   border-radius: 30px;
