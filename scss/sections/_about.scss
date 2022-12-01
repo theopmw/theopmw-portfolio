@@ -1,0 +1,48 @@
+@use '../components/breakpoints' as *;
+
+.about-content-container {
+  display: flex;
+  // padding-top: 1rem;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+
+  .left-about {
+    flex: 1;
+
+    .about-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include lg {
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      img {
+        width: 300px;
+
+        @include md {
+          width: 400px;
+        }
+
+        @include lg {
+          width: 350px;
+        }
+
+        @include xl {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  .right-about {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+  }
+}
