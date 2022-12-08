@@ -17,6 +17,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-bottom: 2rem;
+
+      @include md {
+        padding-bottom: 0;
+      }
 
       @include lg {
         align-items: flex-start;
