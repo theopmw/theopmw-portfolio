@@ -21,36 +21,36 @@ const other = ['Heroku', 'AWS', 'Stripe', 'Google-Maps'];
 const currentlyLearning = ['React'];
 
 // set variables
-let imgType = '.svg';
-let imgs_languages = './assets/img/languages/';
-let imgs_frameworks = './assets/img/frameworks/';
-let imgs_databases = './assets/img/databases/';
-let imgs_version_control = './assets/img/version-control/';
-let imgs_design = './assets/img/design/';
-let imgs_other = './assets/img/other-tools/';
-let imgs_current = './assets/img/currently-learning/';
+const imgType = '.svg';
+const imgs_languages = './assets/img/languages/';
+const imgs_frameworks = './assets/img/frameworks/';
+const imgs_databases = './assets/img/databases/';
+const imgs_version_control = './assets/img/version-control/';
+const imgs_design = './assets/img/design/';
+const imgs_other = './assets/img/other-tools/';
+const imgs_current = './assets/img/currently-learning/';
 
-let ul_languages = "<div class='languages-container'><ul>";
-let ul_frameworks = "<div class='frameworks-container'><ul>";
-let ul_databases = "<div class='databases-container'><ul>";
-let ul_version_control = "<div class='version-control-container'><ul>";
-let ul_design = "<div class='design-container'><ul>";
-let ul_other = "<div class='other-tools-container'><ul>";
-let ul_current = "<div class='currently-learning-container'><ul>";
+const ul_languages = "<div class='languages-container'><ul>";
+const ul_frameworks = "<div class='frameworks-container'><ul>";
+const ul_databases = "<div class='databases-container'><ul>";
+const ul_version_control = "<div class='version-control-container'><ul>";
+const ul_design = "<div class='design-container'><ul>";
+const ul_other = "<div class='other-tools-container'><ul>";
+const ul_current = "<div class='currently-learning-container'><ul>";
 
-let languagesList = ul_languages;
+const languagesList = ul_languages;
 
-let frameworksList = ul_frameworks;
+const frameworksList = ul_frameworks;
 
-let databasesList = ul_databases;
+const databasesList = ul_databases;
 
-let versionControlList = ul_version_control;
+const versionControlList = ul_version_control;
 
-let designList = ul_design;
+const designList = ul_design;
 
-let otherList = ul_other;
+const otherList = ul_other;
 
-let currentList = ul_current;
+const currentList = ul_current;
 
 languages.map((language) => {
   languagesList += `<li class="skills-item"><img src="${imgs_languages}${language}${imgType}" alt="${language}"><h3>${language}</h3></li>`;
