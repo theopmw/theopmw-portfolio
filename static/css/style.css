@@ -1293,12 +1293,8 @@
 @media (min-width: 992px) {
   .about-content-container .left-about .about-image {
     padding-bottom: 0;
-  }
-}
-@media (min-width: 992px) {
-  .about-content-container .left-about .about-image {
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
   }
 }
 .about-content-container .left-about .about-image img {
