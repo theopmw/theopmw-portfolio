@@ -1427,6 +1427,20 @@
   }
 }
 
+.thank-you-content {
+  background-color: var(--color-primary);
+}
+.thank-you-content .thank-you-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.thank-you-content .thank-you-heading {
+  font-family: "Montserrat", sans-serif;
+}
+
 :root {
   --color-primary: #31657d;
   --color-secondary: #7c8d95;

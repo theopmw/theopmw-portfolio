@@ -1,0 +1,15 @@
+.thank-you-content {
+  background-color: var(--color-primary);
+
+  .thank-you-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .thank-you-heading {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
