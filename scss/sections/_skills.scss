@@ -54,6 +54,15 @@
       }
 
       img {
+        transition: all 0.2s;
+        transform-origin: 50% 50%;
+
+        &:hover {
+          transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+        }
+
         @include xs {
           height: 3.125rem;
         }
