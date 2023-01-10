@@ -1,10 +1,9 @@
-const languages = ['HTML', 'CSS', 'JavaScript', 'Python'];
+const languages = ['HTML', 'CSS', 'Sass', 'JavaScript', 'Python'];
 
 const frameworks = [
   'Bootstrap',
   'Materialize',
   'JQuery',
-  'Sass',
   'Flask',
   'Jinja2',
   'Django',
