@@ -1589,22 +1589,26 @@ section {
 
 .active.section {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
 }
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
+@media (min-width: 992px) {
+  .active.section {
+    -webkit-animation: scaleAnim 1s ease-in-out;
+            animation: scaleAnim 1s ease-in-out;
   }
-  100% {
-    transform: translateY(0) scaleY(1);
+  @-webkit-keyframes scaleAnim {
+    0% {
+      transform: translateY(-100%) scaleY(0);
+    }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
   }
-}
-@keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
+  @keyframes scaleAnim {
+    0% {
+      transform: translateY(-100%) scaleY(0);
+    }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
   }
 }/*# sourceMappingURL=style.css.map */

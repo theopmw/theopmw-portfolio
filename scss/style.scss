@@ -155,16 +155,33 @@ section {
 
 .active.section {
   display: block;
-  animation: scaleAnim 1s ease-in-out;
-  @keyframes scaleAnim {
-    0% {
-      transform: translateY(-100%) scaleY(0);
-    }
-    100% {
-      transform: translateY(0) scaleY(1);
+
+  @include lg {
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+      0% {
+        transform: translateY(-100%) scaleY(0);
+      }
+      100% {
+        transform: translateY(0) scaleY(1);
+      }
     }
   }
 }
+
+// Original code
+// .active.section {
+//   display: block;
+//   animation: scaleAnim 1s ease-in-out;
+//   @keyframes scaleAnim {
+//     0% {
+//       transform: translateY(-100%) scaleY(0);
+//     }
+//     100% {
+//       transform: translateY(0) scaleY(1);
+//     }
+//   }
+// }
 
 // .section-end {
 //   @include xs {
