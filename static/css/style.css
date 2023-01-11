@@ -185,6 +185,12 @@
   font-weight: 600;
   font-size: 4rem;
   padding-bottom: 1.25rem;
+  font-size: 3.1rem;
+}
+@media (min-width: 768px) {
+  .section-heading h2 {
+    font-size: 4rem;
+  }
 }
 
 .sub-heading {

@@ -9,6 +9,11 @@
     font-weight: 600;
     font-size: 4rem;
     padding-bottom: 1.25rem;
+    font-size: 3.1rem;
+
+    @include md {
+      font-size: 4rem;
+    }
   }
 }
 
