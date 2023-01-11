@@ -8,14 +8,22 @@
   @include lg {
     flex-direction: row;
     padding-top: 1rem;
+
+    .left-about {
+      order: 2;
+    }
+
+    .right-about {
+      order: 1;
+    }
   }
 
-  .left-about {
+  .right-about {
     flex: 1;
     font-family: 'Roboto', sans-serif;
   }
 
-  .right-about {
+  .left-about {
     flex: 1;
 
     .about-image {
