@@ -21,6 +21,25 @@
   .right-about {
     flex: 1;
     font-family: 'Roboto', sans-serif;
+
+    .about-text p {
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+      // word-spacing: 2px;
+    }
+
+    .about-text p:first-child::first-letter,
+    .about-text p:nth-of-type(2)::first-letter,
+    .about-text p:nth-of-type(3)::first-letter,
+    .about-text p:nth-of-type(4)::first-letter {
+      color: #fff;
+      font-weight: bold;
+      font-size: 48px;
+      float: left;
+      line-height: 30px;
+      padding-right: 5px;
+      margin-top: 12px;
+    }
   }
 
   .left-about {
