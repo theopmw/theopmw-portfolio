@@ -74,7 +74,7 @@
     mix-blend-mode: screen;
 
     .home-text {
-      margin: 3rem 1rem 0 1rem;
+      margin: 2rem 1rem 0 1rem;
       // @include v-align;
 
       @include sm {
@@ -84,13 +84,13 @@
     }
 
     .landing-heading {
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       font-weight: 900;
       color: #000;
 
-      @include breakpoint(390px) {
-        font-size: 5.6rem;
-      }
+      // @include breakpoint(390px) {
+      //   font-size: 5.6rem;
+      // }
 
       @include sm {
         font-size: 6rem;

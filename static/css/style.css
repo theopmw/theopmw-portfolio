@@ -130,7 +130,7 @@
   mix-blend-mode: screen;
 }
 .hero-wrapper .hero-content .home-text {
-  margin: 3rem 1rem 0 1rem;
+  margin: 2rem 1rem 0 1rem;
 }
 @media (min-width: 576px) {
   .hero-wrapper .hero-content .home-text {
@@ -145,14 +145,9 @@
   }
 }
 .hero-wrapper .hero-content .landing-heading {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 900;
   color: #000;
-}
-@media (min-width: 390px) {
-  .hero-wrapper .hero-content .landing-heading {
-    font-size: 5.6rem;
-  }
 }
 @media (min-width: 576px) {
   .hero-wrapper .hero-content .landing-heading {
