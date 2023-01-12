@@ -140,18 +140,13 @@
   -o-transform: translateY(-50%);
 }
 .hero-wrapper .hero-content .landing-heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
   color: #000;
 }
-@media (min-width: 390px) {
-  .hero-wrapper .hero-content .landing-heading {
-    font-size: 5rem;
-  }
-}
 @media (min-width: 576px) {
   .hero-wrapper .hero-content .landing-heading {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media (min-width: 992px) {
@@ -166,9 +161,14 @@
   }
 }
 .hero-wrapper .hero-content .landing-subheading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: #000;
+}
+@media (min-width: 768px) {
+  .hero-wrapper .hero-content .landing-subheading {
+    font-size: 2rem;
+  }
 }
 .hero-wrapper .hero-content code {
   font-size: 1.25rem;

@@ -79,16 +79,16 @@
     }
 
     .landing-heading {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: 900;
       color: #000;
 
-      @include breakpoint(390px) {
-        font-size: 5rem;
-      }
+      // @include breakpoint(390px) {
+      //   font-size: 5rem;
+      // }
 
       @include sm {
-        font-size: 6rem;
+        font-size: 5rem;
       }
 
       @include lg {
@@ -102,9 +102,13 @@
     }
 
     .landing-subheading {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 900;
       color: #000;
+
+      @include md {
+        font-size: 2rem;
+      }
     }
 
     code {
