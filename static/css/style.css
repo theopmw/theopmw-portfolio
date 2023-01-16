@@ -1370,6 +1370,7 @@
 .submit-btn button .main-btn .btn-text {
   padding: 0 2rem;
   text-transform: uppercase;
+  color: #000;
 }
 .submit-btn button .main-btn .btn-icon {
   background-color: var(--color-grey-4);
