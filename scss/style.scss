@@ -31,17 +31,11 @@
   list-style: none;
 }
 
-// html {
-//   height: 100%;
-// }
-
 body {
   background-color: var(--color-white);
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
-
-  // height: 100%;
 }
 
 a {
@@ -78,44 +72,6 @@ section {
   flex-direction: column;
   min-height: 92vh;
 }
-
-// .footer {
-//   height: 50px;
-//   // background: red;
-//   margin-top: auto;
-//   margin-bottom: 10px;
-
-//   @include lg {
-//     margin-bottom: 0;
-//   }
-// }
-
-// .body,
-// html,
-// .container {
-//   height: 100%;
-// }
-
-// .section > .container {
-//   height: auto;
-//   min-height: 100%;
-// }
-
-// .container:after {
-//   content: '123';
-//   display: block;
-//   height: 100px;
-// }
-
-// .footer {
-//   background: #662e8c;
-//   margin-top: -100px;
-//   height: 100px;
-//   color: #fff;
-//   position: relative;
-//   line-height: 180%;
-//   padding: 0 10px;
-// }
 
 .section {
   @include transition;
@@ -168,32 +124,3 @@ section {
     }
   }
 }
-
-// Original code
-// .active.section {
-//   display: block;
-//   animation: scaleAnim 1s ease-in-out;
-//   @keyframes scaleAnim {
-//     0% {
-//       transform: translateY(-100%) scaleY(0);
-//     }
-//     100% {
-//       transform: translateY(0) scaleY(1);
-//     }
-//   }
-// }
-
-// .section-end {
-//   @include xs {
-//     // margin: 3rem 0;
-//     margin: 1rem 0;
-//   }
-
-//   @include lg {
-//     margin: 0;
-//   }
-
-//   // @include md {
-//   //   margin: 3rem 0;
-//   // }
-// }

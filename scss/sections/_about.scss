@@ -2,7 +2,6 @@
 
 .about-content-container {
   display: flex;
-  // padding-top: 1rem;
   flex-direction: column;
 
   @include lg {
@@ -25,7 +24,6 @@
     .about-text p {
       line-height: 1.5;
       letter-spacing: 0.2px;
-      // word-spacing: 2px;
     }
 
     .about-text p:first-child::first-letter,
@@ -51,14 +49,8 @@
       justify-content: center;
       padding-bottom: 2rem;
 
-      // @include lg {
-      //   padding-bottom: 0;
-      // }
-
       @include lg {
         padding-bottom: 0;
-        // align-items: flex-start;
-        // justify-content: flex-start;
         align-items: center;
         justify-content: center;
       }
