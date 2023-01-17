@@ -3,7 +3,7 @@ const languages = ['HTML', 'CSS', 'Sass', 'JavaScript', 'Python'];
 const frameworks = [
   'Bootstrap',
   'Materialize',
-  'JQuery',
+  'jQuery',
   'Flask',
   'Jinja2',
   'Django',
