@@ -1357,7 +1357,6 @@
   border-radius: 30px;
   border: none;
   background-color: var(--color-white);
-  cursor: pointer;
 }
 .submit-btn button .main-btn {
   font-family: "Montseratt", sans-serif;
@@ -1367,6 +1366,7 @@
   align-items: center;
   transition: all 0.4s ease-in-out;
   border-radius: 30px;
+  cursor: pointer;
 }
 .submit-btn button .main-btn .btn-text {
   padding: 0 2rem;
