@@ -1357,6 +1357,7 @@
   border-radius: 30px;
   border: none;
   background-color: var(--color-white);
+  cursor: pointer;
 }
 .submit-btn button .main-btn {
   font-family: "Montseratt", sans-serif;
